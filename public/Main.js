@@ -31,8 +31,11 @@ for(let mov of movies ) {
                 const mimg = document.createElement("img");
 
                 mpplot.innerHTML = data.Plot;
+                mpplot.classList.add("plottext");
                 mprating.innerHTML = data.imdbRating;
+                mprating.classList.add("ratingtext")
                 mptitle.innerHTML = data.Title;
+                mptitle.classList.add("titletext");
                 mimg.src = data.Poster;
                 ma.href = mov.youtubeid;
 
