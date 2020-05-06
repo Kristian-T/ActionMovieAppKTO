@@ -3,64 +3,50 @@ body {
 }
 
 h1 {
-    /*outline-style: dashed;*/
     text-color: #222222;
-    font-family: "Berlin Sans FB";
+    font-family: "Roboto Light";
     font-size: xx-large;
 }
 
 .wrapper {
-   /* outline-style: dashed;
-    outline-color: blue;*/
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 60px;
+    grid-template-columns: auto auto;
+    grid-row-gap: 50px;
     grid-column-gap: 20px;
+}
+
+ul {
+    margin: unset;
 }
 
 ul li {
     position: relative;
-    /*outline-style: dashed;
-    outline-color: red;*/
-    background-color: whitesmoke;
     alignment: center;
     background-size: cover;
     color: white;
     text-align: center;
+    font-family: "Roboto Light";
 }
 
 .titletext {
-   /* outline-color: green;
-    outline-style: dashed;*/
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     text-align: center;
 }
 
 .plottext {
-    /* outline-color: green;
-     outline-style: dashed;*/
     font-size: large;
     text-align: left;
 }
 
+/*This css positions the dark transparent background of the div that i use around the text over the images.*/
 li div {
     display: inline-block;
     position: absolute;
     margin: unset;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 25%);
-  /*  outline-color: darkcyan;
-    outline-style: dashed;*/
+    transform: translate(-50%);
     background-color: rgba(2,2,2,0.8);
     width: 100%;
-}
-
-li img {
-    margin-top: 50px;
- /*   outline-style: dashed;*/
-    height: 450px;
-    width: 335px;
 }
